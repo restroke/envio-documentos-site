@@ -46,7 +46,7 @@ export default function UploadDocumentos() {
     formData.append("cpf", files.cpf);
     formData.append("comprovante", files.comprovante);
 
-    const res = await fetch("https://backend-render-9kze.onrender.com", {
+    const res = await fetch("https://backend-render-9kze.onrender.com/api/enviar-documentos/", {
       method: "POST",
       body: formData,
     });
